@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@drawable/pizarra"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MenusFragment">
+
+    <TextView
+
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:fontFamily="casual"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:textColor="@color/colorWite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/menu"
+        android:text="MENU"
+        android:textAlignment="inherit"
+        android:scrollbars="vertical"
+        android:textSize="18dp"
+        android:textStyle="bold"
+
+        android:gravity="center_horizontal" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="false">
+
+        <LinearLayout
+
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+
+
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:isScrollContainer="true"
+            android:id="@+id/relativeLayout2"
+
+            >
+
+
+
+
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+
+                android:textStyle="bold"
+                android:textColor="@color/colorWite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Primeros"
+                android:id="@+id/textView"
+                />
+
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+
+                android:textStyle="italic"
+
+                android:textColor="@color/colorWite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Platos"
+                android:id="@+id/primeros"
+
+                />
+
+            <LinearLayout
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_width="219dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+
+
+                android:id="@+id/relativeLayout"
+                android:layout_gravity="right"
+                android:layout_above="@+id/Button"
+                android:layout_alignRight="@+id/Button"
+                android:layout_alignEnd="@+id/Button">
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+
+                android:textStyle="bold"
+                android:textColor="@color/colorWite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Segundos"
+                android:id="@+id/textView3"
+
+                />
+
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+
+                android:textStyle="italic"
+
+                android:textColor="@color/colorWite"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/segundos"
+                android:text="Platos"
+                android:layout_weight="0.44" />
+
+
+
+
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+
+                android:textStyle="bold"
+                android:textColor="@color/colorWite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Postres"
+                android:id="@+id/textView4"
+
+                />
+
+
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:textStyle="italic"
+
+                android:textColor="@color/colorWite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Platos"
+                android:id="@+id/terceros"
+
+                />
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/interior"
+                android:secondaryProgressTint="@color/colorWite"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:textColor="@color/colorWite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TERRAZA"
+                android:id="@+id/terraza_texto"
+
+
+                android:layout_marginBottom="7dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorWite"
+                android:layout_height="wrap_content"
+                android:text="INTERIOR"
+                android:id="@+id/interior_progres"
+
+                />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/terraza"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

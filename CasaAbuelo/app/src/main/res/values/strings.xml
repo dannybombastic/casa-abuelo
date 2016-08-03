@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Casa Abuelo</string>
+    <string name="texto">texto</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="primeros"><u>primeros</u></string>
+    <string name="terceros_y_postres"><u>Terceros y postres</u></string>
+    <string name="segundos"><u>Segundos</u></string>
+    <string name="telefono">952663866</string>
+    <string name="entradas">ENTRADAS</string>
+    <string name="bocadillos">BOCADILLOS</string>
+    <string name="vinos">VINOS</string>
+    <string name="pizzeria">PIZZAS</string>
+    <string name="pescado">PESCADO</string>
+    <string name="postres">POSTRES</string>
+    <string name="carnes">CARNES</string>
+    <string name="tapas">TAPAS</string>
+    <string name="ensaladas">ENSALADAS</string>
+    <string name="title_activity_cartas">Cartas</string>
+    <string name="casa_el_abuelo">Casa el Abuelo</string>
+    <string name="vs">Vs</string>
+    <string name="atras">atras</string>
+    <string name="menu">MENU</string>
+    <string name="dibujar">DIBUJAR</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">Casa el Abuelo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>

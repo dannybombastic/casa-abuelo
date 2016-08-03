@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.danny.danny.casaabuelo">
+
+    <supports-screens android:largeScreens="true"/>
+    <supports-screens android:xlargeScreens="true"/>
+
+    <uses-sdk android:minSdkVersion="9" />
+    // GMC declara permisos para servicios GMC
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    // final permisos
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="com.danny.danny.casaabuelo.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.danny.danny.casaabuelo.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icono"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/FullscreenTheme">
+        <activity android:name=".Cabuelo">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+
+        </activity>
+        // declaracion de mi servicio pull-IT
+        <service
+            android:name=".MiServicio_pull_IT.Notificacion"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":update" />
+        // broadcast utilizado pa ra almacenar los datos en el sharedPreferences
+        <receiver
+            android:name=".MiServicio_pull_IT.Mibroadcastreciver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="ACTUALIZAR_DOS" />
+            </intent-filter>
+        </receiver>
+        // iniciamos mi servicio al inicio del arraque del terminal
+        <receiver
+            android:name=".MiServicio_pull_IT.BootupReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        // declaramos el receptor de los servicios de GMC
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.danny.danny.casaabuelo" />
+            </intent-filter>
+        </receiver>
+        // fin receiver
+        // ponemos a la ecucha nuetra app con listener de GMC
+        <service
+            android:name=".servicios_GMC.GmcListenerService"
+            android:exported="false"
+            android:process=":listener">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        // fin del Listener
+
+        // escuchador del ID
+        <service
+            android:name=".servicios_GMC.MiIstanciaID"
+            android:exported="false"
+            android:process=":myid">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        // fin del Listener
+        <service
+            android:name=".servicios_GMC.RegistrarIntentService"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/FullscreenTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".Splash">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

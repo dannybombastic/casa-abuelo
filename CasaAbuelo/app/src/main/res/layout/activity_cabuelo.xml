@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="40dp"
+    android:background="@drawable/pizarra"
+    tools:context="com.danny.danny.casaabuelo.Cabuelo"
+    android:weightSum="10">
+
+
+
+    <ImageButton
+
+
+        android:layout_width="match_parent"
+        android:layout_height="141dp"
+        android:background="@drawable/logook"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageButton"
+
+
+
+
+       />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        >
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button5"
+            android:background="@android:drawable/ic_menu_call"
+            android:layout_gravity="center"
+
+            />
+        <ImageButton
+
+            android:layout_gravity="center"
+
+            android:background="@drawable/telefon"
+            android:id="@+id/llamada2"
+            android:gravity="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:layout_weight="3.03">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/colorWite"
+            android:elevation="25dp"
+            android:layout_gravity="center_vertical"
+            android:text="EVENTOS"
+            android:id="@+id/evento"
+
+            android:gravity="center"
+            android:textSize="25dp"
+
+
+             />
+
+        <ImageButton
+
+
+            android:layout_width="50dp"
+            android:layout_height="43dp"
+            android:background="@drawable/botfut"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/balon"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorWite"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:elevation="25dp"
+
+            android:text="PARTIDOS"
+            android:id="@+id/partido"
+
+            android:textSize="25dp"
+
+
+             />
+
+    </LinearLayout>
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_weight="4"
+    android:weightSum="1"
+
+    >
+
+
+
+
+        <ImageButton
+
+            android:clickable="true"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton2"
+            android:background="@drawable/boncarta"
+            android:layout_gravity="center"
+
+
+            android:layout_weight="0.47" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonDibujar"
+        android:layout_gravity="center|bottom"
+
+
+        android:background="@android:drawable/ic_menu_edit"
+        android:textColor="@color/accent_material_light"
+        android:layout_weight="0.19" />
+        <ImageButton
+            android:layout_gravity="center"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Button"
+            android:background="@drawable/botondia"
+
+
+
+            android:layout_weight="0.22" />
+
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>

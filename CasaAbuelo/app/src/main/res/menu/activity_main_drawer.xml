@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/cubiertos"
+            android:title="Menu del dia"
+
+            />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/gorro"
+            android:title="Nuestra carta" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/balon"
+            android:title="Futbol" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_event_black_36dp"
+            android:title="Eventos/Fiestas" />
+    </group>
+
+    <item android:title="Informacion">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_my_location_black_36dp"
+                android:title="Ubicacion" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_child_care_black_36dp"
+                android:title="Niños/Dibujar" />
+        </menu>
+    </item>
+
+</menu>
